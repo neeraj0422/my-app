@@ -47,5 +47,5 @@ This project uses the following technologies:
 React
 ECharts
 TypeScript
-![alt text](https://upload.wikimedia.org/wikipedia/commons/c/c4/World_of_Goo_Logo.png)
+![alt text](./images/BarChart.png)
 `![Image] (C:\Users\neera\Desktop\ChartProject\my-app\images)`
