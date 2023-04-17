@@ -48,4 +48,4 @@ React
 ECharts
 TypeScript
 ![alt text](./images/BarChart.png)
-`![Image] (C:\Users\neera\Desktop\ChartProject\my-app\images)`
+![alt text](./images/LineChart.png)
