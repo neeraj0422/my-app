@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# React ECharts Charts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates how to create line and bar charts using React and ECharts.
 
-## Available Scripts
+**Installation**
+First, clone the repository:
 
-In the project directory, you can run:
+git clone https://github.com/neeraj0422/my-app.git
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Then, navigate to the project directory and install the dependencies using yarn:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+cd your-project
+yarn install
 
-### `yarn test`
+**Usage**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the project, use the following command:
 
-### `yarn build`
+yarn start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This will start the development server and open the project in your default web browser. You can then navigate to http://localhost:3000 to view the charts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Charts**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Line Chart
 
-### `yarn eject`
+The line chart is drawn between "Flavanoids" on the horizontal axis and "Ash" on the vertical axis. The axes are labeled with the corresponding names.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Bar Chart
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The bar chart shows the "Alcohol" categories on the horizontal axis and the minimum "Magnesium" value for each alcohol category on the vertical axis. The axes are labeled with the corresponding names.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Mobile Responsiveness**
+The app is designed to be mobile-responsive and has been tested on various devices with different screen sizes, including:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+iPhone 5
+iPhone X
+iPad
+iPad Pro
+General Laptops
 
-## Learn More
+**Technologies Used**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project uses the following technologies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React
+ECharts
+TypeScript
+![alt text](https://upload.wikimedia.org/wikipedia/commons/c/c4/World_of_Goo_Logo.png)
+`![Image] (C:\Users\neera\Desktop\ChartProject\my-app\images)`
