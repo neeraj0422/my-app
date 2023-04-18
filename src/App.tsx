@@ -14,14 +14,26 @@ useEffect(()=>{
 },[])
 useEffect(()=>{
 if(chartsData){
+  const alcoholCategories = chartsData.map((item) => item.Alcohol);
+  const magnesiumValues = chartsData.map((item) => item.Magnesium);
+  const minMagnesiumValues: number[] = [];
+  alcoholCategories.forEach((category) => {
+    const categoryValues = chartsData.filter((item) => item.Alcohol === category).map((item) => item.Magnesium);
+    const minMagnesium = Math.min(...categoryValues);
+    minMagnesiumValues.push(minMagnesium);
+  });
+  const flavanoidsValues = chartsData.map((item) => item.Flavanoids);
+  const ashValues = chartsData.map((item) => item.Ash);
   const lineChartOptions:ChartOptions = {
     xAxis: {
       type: 'value',
-      name: 'Flavanoids'
+      name: 'Flavanoids',
+      data: flavanoidsValues
     },
     yAxis: {
       type: 'value',
-      name: 'Ash'
+      name: 'Ash',
+      data: ashValues
     },
     series: [{
       type: 'line',
@@ -33,7 +45,11 @@ if(chartsData){
   const barChartOptions = {
     xAxis: {
       type: 'category',
-      data: chartsData.map((item) => item.Alcohol),
+      data: Array.from(new Set(alcoholCategories)),
+      axisLabel: {
+        rotate: 45,
+        margin: 10
+      },
       name: 'Alcohol'
     },
     yAxis: {
@@ -42,7 +58,8 @@ if(chartsData){
     },
     series: [{
       type: 'bar',
-      data: chartsData.map((item) => item.Magnesium)
+      data:Array.from(new Set(minMagnesiumValues)),
+      name: 'Minimum Magnesium Value'
     }]
   };
   setBarChartOptions(barChartOptions)
