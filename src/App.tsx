@@ -15,7 +15,6 @@ useEffect(()=>{
 useEffect(()=>{
 if(chartsData){
   const alcoholCategories = chartsData.map((item) => item.Alcohol);
-  const magnesiumValues = chartsData.map((item) => item.Magnesium);
   const minMagnesiumValues: number[] = [];
   alcoholCategories.forEach((category) => {
     const categoryValues = chartsData.filter((item) => item.Alcohol === category).map((item) => item.Magnesium);
@@ -37,7 +36,7 @@ if(chartsData){
     },
     series: [{
       type: 'line',
-      data: chartsData.map((item) => [item.Flavanoids, item.Ash])
+      data: chartsData.map((item) => [item.Flavanoids, item.Ash])[0]
     }]
   };
   setLineChartOptions(lineChartOptions);
