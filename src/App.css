@@ -6,6 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+canvas {
+  /* overflow-clip-margin: content-box; */
+  overflow:auto !important;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
